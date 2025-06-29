@@ -1,0 +1,345 @@
+<html>
+
+<head>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <title>Contact Us - plumbzo</title>
+  <link href="images/logo.jpeg" rel="icon" type="image/jpeg" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@formspree/js@2.1.0/dist/index.min.js"></script>
+  <style type="text/tailwindcss">
+    :root {
+        --primary-color: #0c7ff2;
+        --primary-text-color: #111418;
+        --secondary-text-color: #60758a;
+        --background-color: #ffffff;
+        --container-background-color: #f8fafc;--border-color: #e2e8f0;}
+      body {
+        font-family: Inter, "Noto Sans", sans-serif;
+      }
+      .hover-primary-text:hover {
+        color: var(--primary-color);
+      }
+      .primary-button {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .primary-button:hover {
+        background-color: #0a68c4;}
+      .icon-primary {
+        color: var(--primary-color);
+      }
+      .form-input {
+        border: 1px solid var(--border-color);
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        width: 100%;
+        transition: border-color 0.2s;
+      }
+      .form-input:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(12, 127, 242, 0.1);
+      }
+      .form-label {
+        color: var(--primary-text-color);
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+    </style>
+</head>
+
+<body class="bg-[var(--background-color)]">
+  <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] px-6 sm:px-10 py-4 shadow-sm">
+        <div class="flex items-center gap-3 text-[var(--primary-text-color)]">
+          <div class="size-6 text-[var(--primary-color)]">
+            <img src="images/logo.jpeg" alt="plumbzo logo" class="w-full h-full object-contain rounded">
+          </div>
+          <h2 class="text-[var(--primary-text-color)] text-xl font-bold leading-tight tracking-[-0.015em]">
+            <a href="index.html">plumbzo</a>
+          </h2>
+        </div>
+        <nav class="flex items-center gap-6">
+          <a class="text-[var(--primary-text-color)] text-sm font-medium leading-normal hover-primary-text transition-colors"
+            href="index.html#services">Services</a>
+          <a class="text-[var(--primary-text-color)] text-sm font-medium leading-normal hover-primary-text transition-colors"
+            href="about.html">About Us</a>
+          <a class="text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors"
+            href="contact.html">Contact</a>
+          <button
+            class="primary-button flex min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+            <span class="truncate">Get a Quote</span>
+          </button>
+        </nav>
+      </header>
+      <main class="flex flex-1 flex-col items-center">
+        <!-- Hero Section -->
+        <section class="w-full">
+          <div class="relative">
+            <div
+              class="flex min-h-[400px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center text-center px-6 py-16"
+              style='background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOEX_xg9e2GXslxVYecjPV3pZOR4YrEkfIZPoevQclATOvIT1ApS8iOZPsosyUCtckVeIuKX_OOfnitxjXHdnaadd413yj2sLMajKzCDPBqtUNc9bsBEEp3ufjZelHe4TOLjpzk8PxhzgHcB0o0sfSb_kt87ZmpYTbYpjQ5800TcaBmJIhryVv18Ie7ANVEe-S2vCUoGECe7GaVQeY2CZgnKVRR_o7wFQKGRm-f0VPTivuOEBn0GKnT_qzlYus6nyIB4M-XwgTYQ");'>
+              <div class="flex flex-col gap-4 max-w-3xl">
+                <h1 class="text-white text-4xl sm:text-5xl font-black leading-tight tracking-tighter">Contact Us</h1>
+                <p class="text-gray-200 text-base sm:text-lg font-normal leading-relaxed">
+                  Get in touch with our team for all your plumbing needs. We're here to help 24/7.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="w-full max-w-6xl px-6 py-16 sm:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div>
+              <h2 class="text-[var(--primary-text-color)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-6">
+                Send Us a Message
+              </h2>
+              <p class="text-[var(--secondary-text-color)] text-base leading-relaxed mb-8">
+                Fill out the form below and we'll get back to you within 24 hours. For emergencies, please call us directly.
+              </p>
+              
+              <form id="contact-form" class="space-y-6" action="https://formspree.io/f/xkgbkdvz" method="POST">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label for="firstName" class="form-label">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required class="form-input">
+                  </div>
+                  <div>
+                    <label for="lastName" class="form-label">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required class="form-input">
+                  </div>
+                </div>
+                
+                <div>
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input type="email" id="email" name="email" required class="form-input">
+                </div>
+                
+                <div>
+                  <label for="phone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required class="form-input">
+                </div>
+                
+                <div>
+                  <label for="service" class="form-label">Service Needed</label>
+                  <select id="service" name="service" class="form-input">
+                    <option value="">Select a service</option>
+                    <option value="leak-detection">Leak Detection & Repair</option>
+                    <option value="drain-cleaning">Drain Cleaning</option>
+                    <option value="water-heater">Water Heater Services</option>
+                    <option value="pipe-repair">Pipe Repair & Replacement</option>
+                    <option value="emergency">Emergency Service</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label for="urgency" class="form-label">Urgency Level</label>
+                  <select id="urgency" name="urgency" class="form-input">
+                    <option value="routine">Routine Service</option>
+                    <option value="scheduled">Scheduled Appointment</option>
+                    <option value="urgent">Urgent (Within 24 hours)</option>
+                    <option value="emergency">Emergency (Immediate)</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label for="message" class="form-label">Message *</label>
+                  <textarea id="message" name="message" rows="5" required class="form-input resize-none" placeholder="Please describe your plumbing issue or service request..."></textarea>
+                </div>
+                
+                <div>
+                  <button type="submit" class="primary-button w-full py-3 px-6 text-base font-semibold rounded-lg transition-colors">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+              <h2 class="text-[var(--primary-text-color)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-6">
+                Get in Touch
+              </h2>
+              <p class="text-[var(--secondary-text-color)] text-base leading-relaxed mb-8">
+                We're here to help with all your plumbing needs. Contact us through any of the methods below.
+              </p>
+              
+              <div class="space-y-8">
+                <!-- Phone -->
+                <div class="flex items-start gap-4">
+                  <div class="icon-primary mt-1">
+                    <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M231.88,175.08A56.26,56.26,0,0,1,185.84,231a8,8,0,0,1-7.15-2.16L115.68,168.26a8,8,0,0,1-2.56-5.79,8.19,8.19,0,0,1,2.39-5.9l27.88-27.88a8,8,0,0,0,0-11.31L104,89.94a8,8,0,0,0-11.31,0L64.8,118.82a8,8,0,0,1-5.9,2.39,8.19,8.19,0,0,1-5.79-2.56L2.16,77.31A8,8,0,0,1,0,70.16,56.26,56.26,0,0,1,80.92,24.12a8,8,0,0,1,1.65,8.06L72.35,56.85a8,8,0,0,0,.47,7.6L96.34,96.6a8,8,0,0,0,7.6.47l24.67-10.22a8,8,0,0,1,8.06,1.65A56.26,56.26,0,0,1,231.88,175.08Z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-tight mb-2">Phone</h3>
+                    <p class="text-[var(--secondary-text-color)] text-base mb-1">
+                      <a href="tel:+1234567890" class="hover-primary-text transition-colors">(+91) 8450995917</a>
+                    </p>
+                    <p class="text-[var(--secondary-text-color)] text-sm">24/7 Emergency Service Available</p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-4">
+                  <div class="icon-primary mt-1">
+                    <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-tight mb-2">Email</h3>
+                    <p class="text-[var(--secondary-text-color)] text-base">
+                      <a href="mailto:plumbzo.com@gmail.com" class="hover-primary-text transition-colors">plumbzo.com@gmail.com</a>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Address -->
+                <div class="flex items-start gap-4">
+                  <div class="icon-primary mt-1">
+                    <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-tight mb-2">Address</h3>
+                    <p class="text-[var(--secondary-text-color)] text-base">
+                      plumbzo Plumbing Services<br>
+                      Mira Bhayandar, Maharashtra<br>
+                      India
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Hours -->
+                <div class="flex items-start gap-4">
+                  <div class="icon-primary mt-1">
+                    <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-tight mb-2">Business Hours</h3>
+                    <p class="text-[var(--secondary-text-color)] text-base">
+                      Monday - Sunday: 7:00 AM - 7:00 PM<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Emergency Notice -->
+              <div class="mt-8 p-6 bg-red-50 border border-red-200 rounded-lg">
+                <div class="flex items-start gap-3">
+                  <div class="text-red-500 mt-1">
+                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M240.26,186.1,152.81,34.23a8,8,0,0,0-13.55,0L51.74,186.1a7.9,7.9,0,0,0,0,7.89,8,8,0,0,0,6.77,3.89H233.49a8,8,0,0,0,6.77-3.89A7.9,7.9,0,0,0,240.26,186.1ZM120,104a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm8,88a12,12,0,1,1,12-12A12,12,0,0,1,128,192Z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-red-800 font-semibold mb-1">Emergency Service</h4>
+                    <p class="text-red-700 text-sm">
+                      For plumbing emergencies, call us immediately at <strong>(+91) 8450995917</strong>. We provide 24/7 emergency service.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="w-full bg-[var(--container-background-color)] py-16 sm:py-24">
+          <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+              <h2 class="text-[var(--primary-text-color)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+                Service Area
+              </h2>
+              <p class="text-[var(--secondary-text-color)] text-lg mt-4 max-w-2xl mx-auto">
+                We proudly serve Mira Bhayandar and surrounding areas in Maharashtra.
+              </p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120514.79079376614!2d72.7760201766539!3d19.278573233934406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b05931cfcaf1%3A0x747d46e84f49bcf1!2sMira%20Bhayandar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1751193946943!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-gray-800 text-gray-300 py-12 px-6 sm:px-10 text-center">
+        <p>© 2025 plumbzo Plumbing. All rights reserved.</p>
+        <p class="text-sm mt-2">Your reliable partner for all plumbing needs.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // FormJS integration
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(form);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        
+        // Show loading state
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+        
+        // Submit to Formspree
+        fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.ok) {
+            // Success
+            alert('Thank you for your message! We will get back to you soon.');
+            form.reset();
+          } else {
+            // Error
+            alert('There was an error sending your message. Please try again or call us directly.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('There was an error sending your message. Please try again or call us directly.');
+        })
+        .finally(() => {
+          // Reset button
+          submitButton.textContent = originalText;
+          submitButton.disabled = false;
+        });
+      });
+    });
+  </script>
+</body>
+
+</html> 

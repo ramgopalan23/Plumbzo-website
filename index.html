@@ -1,0 +1,254 @@
+<html>
+
+<head>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <title>plumbzo</title>
+  <link href="images/logo.jpeg" rel="icon" type="image/jpeg" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+        --primary-color: #0c7ff2;
+        --primary-text-color: #111418;
+        --secondary-text-color: #60758a;
+        --background-color: #ffffff;
+        --container-background-color: #f8fafc;--border-color: #e2e8f0;}
+      body {
+        font-family: Inter, "Noto Sans", sans-serif;
+      }
+      .hover-primary-text:hover {
+        color: var(--primary-color);
+      }
+      .primary-button {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .primary-button:hover {
+        background-color: #0a68c4;}
+      .icon-primary {
+        color: var(--primary-color);
+      }
+    </style>
+</head>
+
+<body class="bg-[var(--background-color)]">
+  <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] px-6 sm:px-10 py-4 shadow-sm">
+        <div class="flex items-center gap-3 text-[var(--primary-text-color)]">
+          <div class="size-6 text-[var(--primary-color)]">
+            <img src="images/logo.jpeg" alt="plumbzo logo" class="w-full h-full object-contain rounded">
+          </div>
+          <h2 class="text-[var(--primary-text-color)] text-xl font-bold leading-tight tracking-[-0.015em]">plumbzo</h2>
+        </div>
+        <nav class="flex items-center gap-6">
+          <a class="text-[var(--primary-text-color)] text-sm font-medium leading-normal hover-primary-text transition-colors"
+            href="#services">Services</a>
+          <a class="text-[var(--primary-text-color)] text-sm font-medium leading-normal hover-primary-text transition-colors"
+            href="about.html">About Us</a>
+          <a class="text-[var(--primary-text-color)] text-sm font-medium leading-normal hover-primary-text transition-colors"
+            href="contact.html">Contact</a>
+          <button
+            class="primary-button flex min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+            <span class="truncate">Get a Quote</span>
+          </button>
+        </nav>
+      </header>
+      <main class="flex flex-1 flex-col items-center">
+        <section class="w-full">
+          <div class="relative">
+            <div
+              class="flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center text-center px-6 py-16"
+              style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGUxOiF3WQRRpDNKD1O3T_ZNZt1u9BGeI7nJ26MSxUOAHh7FljFtscR6nCXajvP4ByXFt0tzt0Ft10CQJH1aIsdh2Pvd0ja5IwIsQzVvZ0PvSG8I_HYdnKbRUQKhcGblDk5X4eDUcBz9cN4nhrG8yugYtXAzyHs6IOxMqRFYDkA_qyQrLt5eoJdRKifUWUf4lSSvKW472YDmPQms_q2__2o_DMJVvXylFxilsm5e4kJB0Wb8dxa3BzbyKNtcTZvtkqWtlvCxuq-g");'>
+              <div class="flex flex-col gap-4 max-w-3xl">
+                <h1 class="text-white text-5xl sm:text-6xl font-black leading-tight tracking-tighter">Your Trusted
+                  Plumbing Experts</h1>
+                <p class="text-gray-200 text-base sm:text-lg font-normal leading-relaxed">
+                  plumbzo Plumbing provides reliable and efficient plumbing services for residential and commercial
+                  properties. Our team of licensed plumbers is dedicated to
+                  delivering top-quality workmanship and exceptional customer service.
+                </p>
+              </div>
+              <button
+                class="primary-button mt-6 flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 text-base font-bold leading-normal tracking-[0.015em] transition-colors"
+                onclick="window.location.href='contact.html#contact-form'">
+                <span class="truncate">Request a Free Quote</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="w-full max-w-6xl px-6 py-16 sm:py-24" id="services">
+          <h2
+            class="text-[var(--primary-text-color)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight text-center mb-12 sm:mb-16">
+            Our Services</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-[var(--container-background-color)] p-6 shadow-lg transition-shadow hover:shadow-xl">
+              <div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPbPSzdgBFk3byw8-Oxaf6dxONMkbg_f0UlR2MnwUmTCMOWEGLLFx5mEphb4BYhvc1qWYV_mHhaj5UNSW7avwY6T6ru2EBwk6qLyHAq4XVYXPDTlt2NALC1-rmcHtAEXpvSHF1IRxj0lzQWlHjwS86jyrJscRGqG55KzEEgvw3c_k6_YG22he8iU4lZ6yQ6M1-8ZhQmmNkOLn2vqWpJW5b4msJh0qepwa72nG-sx8MINWQubsFgKG7_DIX99gwjtL289UJjTbG7A");'>
+              </div>
+              <div>
+                <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-normal mb-1">Leak Detection
+                  &amp; Repair</h3>
+                <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">Expert leak detection
+                  and repair services to prevent water damage and save on your water bill.</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-[var(--container-background-color)] p-6 shadow-lg transition-shadow hover:shadow-xl">
+              <div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmM2GsagRjetjjLOaZA9WxqHQetmdvJJU-jma7eDV_CWKYrlcZ1KeQgKGC0D7XkpK9SkcpUrb3A2FTQtQ0kZjQgA8PCkg4LuduzggRh7ijrsq7Qb6qJfffZ2KdZtLuNi06gvnmC1wR7lC8nzM1MlGp93hzrKmowUyfh-gmGiVC8Pir5T-9SpRIOGTY4dbjZ5ILkxwao1mG21pO0onwsJEhrrZ5GveuMa_X4SLDO2BrVLpqlUMMqJuuM9d-KgoYUCipd5NupwIjBA");'>
+              </div>
+              <div>
+                <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-normal mb-1">Drain Cleaning
+                </h3>
+                <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">Professional drain
+                  cleaning services to keep your drains flowing smoothly and prevent clogs.</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-[var(--container-background-color)] p-6 shadow-lg transition-shadow hover:shadow-xl">
+              <div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOEX_xg9e2GXslxVYecjPV3pZOR4YrEkfIZPoevQclATOvIT1ApS8iOZPsosyUCtckVeIuKX_OOfnitxjXHdnaadd413yj2sLMajKzCDPBqtUNc9bsBEEp3ufjZelHe4TOLjpzk8PxhzgHcB0o0sfSb_kt87ZmpYTbYpjQ5800TcaBmJIhryVv18Ie7ANVEe-S2vCUoGECe7GaVQeY2CZgnKVRR_o7wFQKGRm-f0VPTivuOEBn0GKnT_qzlYus6nyIB4M-XwgTYQ");'>
+              </div>
+              <div>
+                <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-normal mb-1">Water Heater
+                  Services</h3>
+                <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">Comprehensive water
+                  heater services, including installation, repair, and maintenance.</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-[var(--container-background-color)] p-6 shadow-lg transition-shadow hover:shadow-xl">
+              <div class="w-full h-48 bg-center bg-no-repeat bg-cover rounded-lg"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZ4AyWOOTgurvBK8QcJM5iPPweDazzx5c9jvehjwrGNkDCGrNwCd4RJo7YsLRuUy0Airke6dGNLvDIaQ6rDqfZo1LZTdHdY_fxvkuxPrha5ogUj964m0NEgQbAyzPA9LMI87GjwUwxPcZGHkxb1UaWBT0v1NNKAFcVJsVNFflISYvmWkqVsi-TgmzDmj9ydVqjkVtWrSpthqCUEuMAmbVkmzC5bW432twDfG_vgR2JkdT3eNHJwv3MBfTMf81Ryrcm-ydvWu9HSA");'>
+              </div>
+              <div>
+                <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-normal mb-1">Pipe Repair &amp;
+                  Replacement</h3>
+                <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">Reliable pipe repair
+                  and replacement services for all types of plumbing systems.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full bg-[var(--container-background-color)] py-16 sm:py-24" id="why-choose-us">
+          <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12 sm:mb-16">
+              <h2 class="text-[var(--primary-text-color)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+                Why Choose plumbzo Plumbing?</h2>
+              <p class="text-[var(--secondary-text-color)] text-lg mt-4 max-w-2xl mx-auto">
+                We are committed to providing top-quality plumbing solutions with a focus on customer satisfaction and
+                reliability.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
+              <div class="order-2 md:order-1">
+                <h3
+                  class="text-[var(--primary-text-color)] text-2xl sm:text-3xl font-semibold leading-tight tracking-tight mb-4">
+                  Reliable Solutions, Lasting Results</h3>
+                <p class="text-[var(--secondary-text-color)] text-base leading-relaxed mb-6">
+                  At plumbzo Plumbing, we are dedicated to providing reliable and efficient plumbing services. Our team
+                  of licensed plumbers is committed to delivering top-quality
+                  workmanship and exceptional customer service. We offer a wide range of services, from leak detection
+                  and drain cleaning to water heater services and pipe repairs.
+                  With our 24/7 emergency service, you can count on us to address your plumbing needs promptly and
+                  effectively.
+                </p>
+                <a class="primary-button inline-flex items-center justify-center rounded-lg h-11 px-6 text-base font-medium leading-normal tracking-[0.015em] transition-colors"
+                  href="about.html">
+                  Learn More About Us
+                </a>
+              </div>
+              <div class="order-1 md:order-2">
+                <img alt="Plumber working" class="rounded-xl shadow-xl w-full h-auto object-cover max-h-[400px]"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMiwfr0-QdSxZjAqWH1gl_0ovHi140SUf_2TZGZmu_USaDdKScmuVi1bwDJgrcaCtuPsTkzhKSsf1d_dJbsKtvHGgN3tCFrZQr9HB6l7ITe1YCKeVcx1PgI4Y8MHoY92PqriEXpODQZN4Ah6vcbP_LaQEyd0_SxOm9O4S1YGM3WAzpPnAShyPltEuyGrhREjX4T-ElJ-fiZCBuggcl2GtNRPLpdZtNP5XQJZ-6FIdkKlu_lSgPtUBFC6Xt_b2FbOrr_OEhG9SUSA" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-[var(--border-color)] bg-white p-6 shadow-lg transition-shadow hover:shadow-xl text-center items-center">
+                <div class="icon-primary mb-3" data-icon="UsersThree" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-tight">Experienced
+                    Professionals</h3>
+                  <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">Our team of licensed
+                    and experienced plumbers ensures top-quality service.</p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-[var(--border-color)] bg-white p-6 shadow-lg transition-shadow hover:shadow-xl text-center items-center">
+                <div class="icon-primary mb-3" data-icon="Clock" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-tight">24/7 Emergency
+                    Service</h3>
+                  <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">We offer 24/7
+                    emergency plumbing services to address urgent issues promptly.</p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-[var(--border-color)] bg-white p-6 shadow-lg transition-shadow hover:shadow-xl text-center items-center">
+                <div class="icon-primary mb-3" data-icon="Wrench" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-tight">Quality Workmanship
+                  </h3>
+                  <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">We use high-quality
+                    materials and advanced techniques for lasting solutions.</p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 rounded-xl border border-[var(--border-color)] bg-white p-6 shadow-lg transition-shadow hover:shadow-xl text-center items-center">
+                <div class="icon-primary mb-3" data-icon="Smiley" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,176,108Zm-1.07,48c-10.29,17.79-27.4,28-46.93,28s-36.63-10.2-46.92-28a8,8,0,1,1,13.84-8c7.47,12.91,19.21,20,33.08,20s25.61-7.1,33.07-20a8,8,0,0,1,13.86,8Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[var(--primary-text-color)] text-lg font-semibold leading-tight">Customer Satisfaction
+                  </h3>
+                  <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">We are committed to
+                    providing exceptional customer service and ensuring your satisfaction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-gray-800 text-gray-300 py-12 px-6 sm:px-10 text-center">
+        <p>© 2025 plumbzo Plumbing. All rights reserved.</p>
+        <p class="text-sm mt-2">Your reliable partner for all plumbing needs.</p>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>

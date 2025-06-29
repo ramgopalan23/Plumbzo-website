@@ -1,0 +1,216 @@
+<html>
+
+<head>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <title>About Us - plumbzo</title>
+  <link href="images/logo.jpeg" rel="icon" type="image/jpeg" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+        --primary-color: #0c7ff2;
+        --primary-text-color: #111418;
+        --secondary-text-color: #60758a;
+        --background-color: #ffffff;
+        --container-background-color: #f8fafc;--border-color: #e2e8f0;}
+      body {
+        font-family: Inter, "Noto Sans", sans-serif;
+      }
+      .hover-primary-text:hover {
+        color: var(--primary-color);
+      }
+      .primary-button {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .primary-button:hover {
+        background-color: #0a68c4;}
+      .icon-primary {
+        color: var(--primary-color);
+      }
+    </style>
+</head>
+
+<body class="bg-[var(--background-color)]">
+  <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] px-6 sm:px-10 py-4 shadow-sm">
+        <div class="flex items-center gap-3 text-[var(--primary-text-color)]">
+          <div class="size-6 text-[var(--primary-color)]">
+            <img src="images/logo.jpeg" alt="plumbzo logo" class="w-full h-full object-contain rounded">
+          </div>
+          <h2 class="text-[var(--primary-text-color)] text-xl font-bold leading-tight tracking-[-0.015em]">
+            <a href="index.html">plumbzo</a>
+          </h2>
+        </div>
+        <nav class="flex items-center gap-6">
+          <a class="text-[var(--primary-text-color)] text-sm font-medium leading-normal hover-primary-text transition-colors"
+            href="index.html#services">Services</a>
+          <a class="text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors"
+            href="about.html">About Us</a>
+          <a class="text-[var(--primary-text-color)] text-sm font-medium leading-normal hover-primary-text transition-colors"
+            href="contact.html">Contact</a>
+          <button
+            class="primary-button flex min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+            <span class="truncate">Get a Quote</span>
+          </button>
+        </nav>
+      </header>
+      <main class="flex flex-1 flex-col items-center">
+        <!-- Hero Section -->
+        <section class="w-full">
+          <div class="relative">
+            <div
+              class="flex min-h-[400px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center text-center px-6 py-16"
+              style='background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMiwfr0-QdSxZjAqWH1gl_0ovHi140SUf_2TZGZmu_USaDdKScmuVi1bwDJgrcaCtuPsTkzhKSsf1d_dJbsKtvHGgN3tCFrZQr9HB6l7ITe1YCKeVcx1PgI4Y8MHoY92PqriEXpODQZN4Ah6vcbP_LaQEyd0_SxOm9O4S1YGM3WAzpPnAShyPltEuyGrhREjX4T-ElJ-fiZCBuggcl2GtNRPLpdZtNP5XQJZ-6FIdkKlu_lSgPtUBFC6Xt_b2FbOrr_OEhG9SUSA");'>
+              <div class="flex flex-col gap-4 max-w-3xl">
+                <h1 class="text-white text-4xl sm:text-5xl font-black leading-tight tracking-tighter">About plumbzo Plumbing</h1>
+                <p class="text-gray-200 text-base sm:text-lg font-normal leading-relaxed">
+                  Your trusted partner for all plumbing needs since 2010. We're committed to excellence, reliability, and customer satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Company Story Section -->
+        <section class="w-full max-w-6xl px-6 py-16 sm:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-[var(--primary-text-color)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-6">
+                Our Story
+              </h2>
+              <p class="text-[var(--secondary-text-color)] text-base leading-relaxed mb-4">
+                Founded in 2010, plumbzo Plumbing began with a simple mission: to provide reliable, honest, and professional plumbing services to our community. What started as a small family business has grown into one of the most trusted plumbing companies in the region.
+              </p>
+              <p class="text-[var(--secondary-text-color)] text-base leading-relaxed mb-4">
+                Our founder, John Smith, started as a licensed plumber with over 15 years of experience. He saw a need for a plumbing company that prioritized customer satisfaction, transparency, and quality workmanship above all else.
+              </p>
+              <p class="text-[var(--secondary-text-color)] text-base leading-relaxed mb-6">
+                Today, our team consists of highly skilled, licensed plumbers who share the same commitment to excellence. We've served thousands of satisfied customers and continue to grow while maintaining the personal touch that sets us apart.
+              </p>
+            </div>
+            <div>
+              <img alt="Plumbing team" class="rounded-xl shadow-xl w-full h-auto object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGUxOiF3WQRRpDNKD1O3T_ZNZt1u9BGeI7nJ26MSxUOAHh7FljFtscR6nCXajvP4ByXFt0tzt0Ft10CQJH1aIsdh2Pvd0ja5IwIsQzVvZ0PvSG8I_HYdnKbRUQKhcGblDk5X4eDUcBz9cN4nhrG8yugYtXAzyHs6IOxMqRFYDkA_qyQrLt5eoJdRKifUWUf4lSSvKW472YDmPQms_q2__2o_DMJVvXylFxilsm5e4kJB0Wb8dxa3BzbyKNtcTZvtkqWtlvCxuq-g" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="w-full bg-[var(--container-background-color)] py-16 sm:py-24">
+          <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12 sm:mb-16">
+              <h2 class="text-[var(--primary-text-color)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+                Our Values
+              </h2>
+              <p class="text-[var(--secondary-text-color)] text-lg mt-4 max-w-2xl mx-auto">
+                These core values guide everything we do and ensure we deliver the best service possible.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-white p-6 shadow-lg">
+                <div class="icon-primary" data-icon="Heart" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c17.93,0,29.15,9.73,35.18,19.58a8,8,0,0,0,13.65,0C132.85,57.73,144.07,48,162,48a46.06,46.06,0,0,1,46,46C208,147.61,130.26,196.15,128,206.8Z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-[var(--primary-text-color)] text-xl font-semibold leading-tight">Integrity</h3>
+                <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">
+                  We believe in honest pricing, transparent communication, and doing what's right for our customers every time.
+                </p>
+              </div>
+              <div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-white p-6 shadow-lg">
+                <div class="icon-primary" data-icon="Star" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M239.2,97.4A17.35,17.35,0,0,0,222.86,86l-51.25-7.46L140.81,29.35a17.35,17.35,0,0,0-25.62,0L84.39,78.55,33.14,86A17.35,17.35,0,0,0,16.8,97.4a17.37,17.37,0,0,0,5.12,18.77L53.51,147.7,45.74,198.63a17.34,17.34,0,0,0,16.95,20.27,17.21,17.21,0,0,0,8.34-2.13l45.32-23.82,45.32,23.82a17.21,17.21,0,0,0,8.34,2.13,17.34,17.34,0,0,0,16.95-20.27L202.49,147.7l31.59-31.53A17.37,17.37,0,0,0,239.2,97.4ZM128,127.47L87.57,88.09l40.43-5.89L128,47.47l40.43,34.73,40.43,5.89Z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-[var(--primary-text-color)] text-xl font-semibold leading-tight">Excellence</h3>
+                <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">
+                  We strive for excellence in every job, using the best materials and techniques to ensure lasting results.
+                </p>
+              </div>
+              <div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] bg-white p-6 shadow-lg">
+                <div class="icon-primary" data-icon="Users" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-[var(--primary-text-color)] text-xl font-semibold leading-tight">Customer Focus</h3>
+                <p class="text-[var(--secondary-text-color)] text-sm font-normal leading-relaxed">
+                  Our customers are at the heart of everything we do. We listen, understand, and deliver solutions that exceed expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="w-full max-w-6xl px-6 py-16 sm:py-24">
+          <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-[var(--primary-text-color)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+              Meet Our Team
+            </h2>
+            <p class="text-[var(--secondary-text-color)] text-lg mt-4 max-w-2xl mx-auto">
+              Our experienced team of licensed plumbers is ready to handle any plumbing challenge.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
+            <!-- Team Member 1 -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-48 h-48 rounded-full overflow-hidden mb-6 shadow-lg">
+                <img src="images/founder1.png" 
+                     alt="Ram Gopalan" 
+                     class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-[var(--primary-text-color)] text-xl font-semibold leading-tight mb-2">Ram Gopalan</h3>
+              <p class="text-[var(--primary-color)] text-sm font-medium mb-2">Founder</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-48 h-48 rounded-full overflow-hidden mb-6 shadow-lg">
+                <img src="images/founder2.png" 
+                     alt="Krishna Garg" 
+                     class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-[var(--primary-text-color)] text-xl font-semibold leading-tight mb-2">Krishna Garg</h3>
+              <p class="text-[var(--primary-color)] text-sm font-medium mb-2">Co-Founder</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="w-full bg-[var(--primary-color)] py-16 sm:py-24">
+          <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-6">
+              Ready to Get Started?
+            </h2>
+            <p class="text-gray-100 text-lg mb-8 max-w-2xl mx-auto">
+              Contact us today for a free consultation and quote. Our team is ready to help with all your plumbing needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="contact.html" class="bg-white text-[var(--primary-color)] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Contact Us
+              </a>
+              <a href="index.html#services" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[var(--primary-color)] transition-colors">
+                View Services
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-gray-800 text-gray-300 py-12 px-6 sm:px-10 text-center">
+        <p>© 2025 plumbzo Plumbing. All rights reserved.</p>
+        <p class="text-sm mt-2">Your reliable partner for all plumbing needs.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html> 
